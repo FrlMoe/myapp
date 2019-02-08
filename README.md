@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Started Web Dev a few weeks ago, quite a rollercoaster ride, and this is my first app.
 
 Things you may want to cover:
 
