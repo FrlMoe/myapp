@@ -1,3 +1,46 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// General
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Permanent Marker', cursive;
+}
+.index-content {
+  padding-top: 80px;
+}
+#contact-content {
+  text-align: center;
+  padding-top: 40px;
+}
+#about-content {
+  margin: auto;
+  padding-top: 30px;
+}
+
+// Navbar
+.navbar-brand { text-transform: uppercase;}
+a.navbar-brand {
+  color: #889fdd !important;
+  font-size: 1.5em;
+  border: 1px solid #889fdd;
+ }
+nav a  {
+font-family: 'Permanent Marker', cursive;
+transition: color 600ms;
+font-size: 1.2em;
+}
+.navbar { background: linear-gradient(to right, #333638, #005f8f) !important;}
+
+//Footer
+footer {
+  background: linear-gradient(to right, #333638, #005f8f) !important;
+  text-align: center;
+  color: #fff;
+  height: 40px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
