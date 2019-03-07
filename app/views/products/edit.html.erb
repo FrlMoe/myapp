@@ -1,6 +1,11 @@
-<h1>Editing Product</h1>
+<div class="container edit">
+  <div class="row">
+    <div class="col-md-6 offset-sm-3">
+      <h3>Editing Product</h3>
+      <%= render 'form', product: @product %>
 
-<%= render 'form', product: @product %>
-
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+      <%= link_to 'Show', @product %> |
+      <%= link_to 'Back', products_path %>
+    </div>
+  </div>
+</div>

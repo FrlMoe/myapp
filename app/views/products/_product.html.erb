@@ -1,6 +1,8 @@
 
   <div class="col-xs-6 col-sm-6 col-lg-3 products-items">
+
     <%= image_tag(product.image_url, class: "img-fluid product-img") unless product.image_url.nil? %>
+
     <h2><%= product.name %></h2>
     <strong><p><%= product.description %></p></strong>
     <p><%= product.colour %></p>
