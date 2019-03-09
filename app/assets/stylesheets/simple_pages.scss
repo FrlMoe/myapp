@@ -14,10 +14,6 @@ p {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
 }
-#contact-content {
-  text-align: center;
-  padding-top: 40px;
-}
 #about-content {
   margin: auto;
   padding-top: 30px;
@@ -26,6 +22,7 @@ p {
   margin-top: 70px;
   margin-bottom: 70px;
 }
+.thank_you-content { text-align: center;}
 
 // Carousel
 .carousel-item {
