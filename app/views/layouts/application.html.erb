@@ -64,28 +64,14 @@
      </nav>
 
 
-
-
      <% if notice %>
        <p id="notice" class="alert alert-success"><%= notice %></p>
      <% end %>
 
-     <% if notice %>
+     <% if alert %>
        <p id="alert" class="alert alert-danger" role="alert"><%= alert %></p>
      <% end %>
 
-
-
-
-
-
-<!-- <nav>
-      <ul>
-        <li><#%= link_to "Home", root_path %></li>
-        <li><#%= link_to "About", simple_pages_about_path %></li>
-        <li><#%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
-    </nav> -->
 
     <%= yield %>
 
