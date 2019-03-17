@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-
+<%= @product.highest_rating_comment %>
+<%= @product.lowest_rating_comment %>
+<div class="row">
+<div class="col-md-4 offset-md-4">
+  <div class="product-show-image">
+<%= image_tag(@product.image_url, class: "img-fluid", width:"300") %>
+  </div>
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
@@ -26,6 +32,15 @@
   <%= @product.price %>
 </p>
 
+<p>
+  <strong>Review:</strong>
+
+</p>
+
+
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+</div>
+</div>
