@@ -1,46 +1,55 @@
 <p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="product-show-image">
+        <%= image_tag(@product.image_url, class: "img-fluid", width:"400") %>
+      </div>
+    </div>
 
-<%= @product.highest_rating_comment %>
-<%= @product.lowest_rating_comment %>
-<div class="row">
-<div class="col-md-4 offset-md-4">
-  <div class="product-show-image">
-<%= image_tag(@product.image_url, class: "img-fluid", width:"300") %>
+      <div class="col-md-6">
+        <p>
+          <strong>Name:</strong>
+          <%= @product.name %>
+        </p>
+
+        <p>
+         <strong>Description:</strong>
+         <%= @product.description %>
+        </p>
+
+        <p>
+         <strong>Image url:</strong>
+         <%= @product.image_url %>
+        </p>
+
+        <p>
+         <strong>Colour:</strong>
+         <%= @product.colour %>
+        </p>
+
+        <p>
+         <strong>Price:</strong>
+         <%= @product.price %>
+        </p>
+
+        <div class="star-rating">
+          <strong>Average Rating:</strong><div class="rated" data-score="<%= @product.average_rating %>"></div>
+
+        <% if @product.comments.length > 0 %>
+        <%= @product.highest_rating_comment.body %>
+        <% end %>
+      </div>
+    </div>
+      <div class="col-md-5 new-comment">
+        <%= render 'new_comment' %>
+      </div>
+      <div class="col-12 user-comments">
+        <%= render 'comments' %>
+      </div>
   </div>
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<p>
-  <strong>Review:</strong>
-
-</p>
-
-
+  </div>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
-</div>
-</div>
