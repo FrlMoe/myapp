@@ -54,8 +54,10 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.6'
-
+  # Use rspec-rails for Unit Tests
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+  # Use rails-controller-testing for Functional Tests
+  gem 'rails-controller-testing'
 end
 
 group :development do
