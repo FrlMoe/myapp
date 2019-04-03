@@ -58,6 +58,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
   # Use rails-controller-testing for Functional Tests
   gem 'rails-controller-testing'
+  # Use factory_bot for testing
+  gem 'factory_bot_rails', '~> 4.0'
+
 end
 
 group :development do
