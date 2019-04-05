@@ -3,8 +3,10 @@ require 'rails_helper'
 describe UsersController, type: :controller do
   #let(:user1) { User.create!(email: "user1@mail.com", password: "random")}
   #let(:user2) { User.create!(email: "user2@mail.com", password: "random")}
-  @user1 = FactoryBot.create(:user)
-  @user2 = FactoryBot.create(:user)
+  before do
+    @user1 = FactoryBot.create(:user)
+    @user2 = FactoryBot.create(:user)
+  end
 
   describe 'GET #show' do
     context 'when a user is logged in' do
