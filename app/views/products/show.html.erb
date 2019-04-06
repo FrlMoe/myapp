@@ -40,6 +40,11 @@
         <%= @product.highest_rating_comment.body %>
         <% end %>
       </div>
+      <br>
+      <%= form_with(url: '/payments/create') do |form| %>
+      <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+
     </div>
       <div class="col-md-5 new-comment">
         <%= render 'new_comment' %>
