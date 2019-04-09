@@ -64,6 +64,7 @@ group :development, :test do
   # Use factory_bot for testing
   gem 'factory_bot_rails', '~> 4.0'
 
+
 end
 
 group :development do
