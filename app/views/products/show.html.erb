@@ -8,6 +8,7 @@
     </div>
 
       <div class="col-md-6">
+        <% cache @product do %>
         <p>
           <strong>Name:</strong>
           <%= @product.name %>
@@ -40,6 +41,7 @@
         <%= @product.highest_rating_comment.body %>
         <% end %>
       </div>
+      <% end %>
       <br>
       <%= form_with(url: '/payments/create') do |form| %>
       <%= hidden_field_tag(:product_id, @product.id) %>
