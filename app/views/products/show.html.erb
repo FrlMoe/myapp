@@ -53,6 +53,7 @@
         <%= render 'new_comment' %>
       </div>
       <div class="col-12 user-comments">
+        <div class="alert alert-info col-md-3" style="display:none" role="alert">A new comment was posted!</div>
         <%= render 'comments' %>
         <br>
         <%= will_paginate @comments %>
